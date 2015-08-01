@@ -28,7 +28,7 @@ public class Lorem {
 
 	public static int genNum(int numElements) {
 
-		double num = (int)(Math.floor(Math.random()*numElements)+1);
+		double num = (int)(Math.floor(Math.random()*numElements-1)+1);
 
 		return (int)num;
 	}
