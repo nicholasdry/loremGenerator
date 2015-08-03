@@ -8,7 +8,7 @@ public class InputWordGen {
 		int wordAmount = 20;
 		String [] words = new String[wordAmount];
 		String word;
-		int wordPlace = 0;
+		int wordIndex = 0;
 		System.out.println("Enter up to 20 words. When done entering, type 0: ");
 
 		for (int i=1;i<21;i++) {
@@ -17,11 +17,10 @@ public class InputWordGen {
 			if (word.equals("0")) {
 				break;
 			}
-			words[wordPlace] = word;
-			wordPlace++;
+			words[wordIndex++] = word;
 		}
 
-		String [] printWords = new String[wordPlace];
+		String [] printWords = new String[wordIndex];
 
 		for (int k=0;k<words.length;k++) {
 			if (words[k] == null) {
