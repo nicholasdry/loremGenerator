@@ -11,8 +11,8 @@ public class InputWordGen {
 		int wordPlace = 0;
 		System.out.println("Enter up to 20 words. When done entering, type stop: ");
 
-		for (int i=0;i<20;i++) {
-			System.out.print("> ");
+		for (int i=1;i<21;i++) {
+			System.out.print(i + " > ");
 			word = input.next();
 			if (word.equals("stop")) {
 				break;
