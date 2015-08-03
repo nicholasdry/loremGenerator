@@ -9,12 +9,12 @@ public class InputWordGen {
 		String [] words = new String[wordAmount];
 		String word;
 		int wordPlace = 0;
-		System.out.println("Enter up to 20 words. When done entering, type stop: ");
+		System.out.println("Enter up to 20 words. When done entering, type 0: ");
 
 		for (int i=1;i<21;i++) {
 			System.out.print(i + " > ");
 			word = input.next();
-			if (word.equals("stop")) {
+			if (word.equals("0")) {
 				break;
 			}
 			words[wordPlace] = word;
